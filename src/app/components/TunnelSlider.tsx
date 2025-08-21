@@ -62,7 +62,7 @@ export default function TunnelSlider() {
     composer.addPass(bloomPass);
 
     // Path points
-    let points = [
+    const  points = [
       [10, 89, 0],
       [50, 88, 10],
       [76, 139, 20],
@@ -118,7 +118,7 @@ export default function TunnelSlider() {
       light.position.copy(p2);
     };
 
-    let tubePerc = { percent: 0 };
+    const  tubePerc = { percent: 0 };
     gsap.to(tubePerc, {
       percent: 0.96,
       ease: "none",

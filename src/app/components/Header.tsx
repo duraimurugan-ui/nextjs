@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ShoppingCart, User } from "lucide-react"; // icon pack
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Header() {
@@ -56,10 +57,10 @@ export default function Header() {
             className="md:hidden bg-white shadow-inner overflow-hidden"
           >
             <nav className="flex flex-col space-y-4 px-6 py-4 font-medium text-gray-700">
-              <a href="#" className="hover:text-blue-600">Home</a>
-              <a href="#" className="hover:text-blue-600">Shop</a>
-              <a href="#" className="hover:text-blue-600">Categories</a>
-              <a href="#" className="hover:text-blue-600">Contact</a>
+              <Link href="/">Home</Link>
+              <Link href="#" className="hover:text-blue-600">Shop</Link>
+              <Link href="#" className="hover:text-blue-600">Categories</Link>
+              <Link href="#" className="hover:text-blue-600">Contact</Link>
               <button className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
                 Sign In
               </button>
