@@ -30,7 +30,7 @@ export default function ContactPage() {
 
       const data = await res.json();
       if (data.success) {
-        setStatus("✅ Email sent successfully!");
+        setStatus("✅ Email sent successfully!!");
         setForm({ name: "", email: "", message: "" });
       } else {
         setStatus("❌ Failed to send email");
