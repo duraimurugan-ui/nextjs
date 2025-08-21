@@ -15,21 +15,21 @@ export default function Header() {
         
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-600">
-          <a href="/"><Image
+          <Link href="/"><Image
     src="/logo.jpg"   // ✅ path from public folder
     alt="YourBrand Logo"
     width={150}       // adjust size
     height={40}
     className="object-contain"
-  /></a>
+  /></Link>
         </div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 font-medium text-gray-700">
-          <a href="/" className="hover:text-blue-600">Home</a>
-          <a href="/products" className="hover:text-blue-600">Shop</a>
-          <a href="#" className="hover:text-blue-600">Categories</a>
-          <a href="/contact" className="hover:text-blue-600">Contact</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/products" className="hover:text-blue-600">Shop</Link>
+          <Link href="#" className="hover:text-blue-600">Categories</Link>
+          <Link href="/contact" className="hover:text-blue-600">Contact</Link>
         </nav>
 
         {/* Right Side (icons) */}
