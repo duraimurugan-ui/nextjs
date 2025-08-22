@@ -11,7 +11,7 @@ export default function Footer() {
           <h2 className="text-2xl font-bold text-white">YourBrand</h2>
           <p className="mt-4 text-gray-400 text-sm leading-relaxed">
             Building digital experiences that inspire and engage. 
-            Let's create something amazing together.
+            Let&apos;s create something amazing together.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* Divider */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-       <p>© 2025 YourBrand. All rights reserved. Don&apos;t copy this.</p>
+        <p>© 2025 YourBrand. All rights reserved.</p>
       </div>
     </footer>
   );
