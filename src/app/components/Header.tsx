@@ -28,7 +28,7 @@ export default function Header() {
         <nav className="hidden md:flex space-x-8 font-medium text-gray-700">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <Link href="/products" className="hover:text-blue-600">Shop</Link>
-          <Link href="#" className="hover:text-blue-600">Categories</Link>
+          <Link href="/about" className="hover:text-blue-600">about</Link>
           <Link href="/contact" className="hover:text-blue-600">Contact</Link>
         </nav>
 
@@ -58,9 +58,9 @@ export default function Header() {
           >
             <nav className="flex flex-col space-y-4 px-6 py-4 font-medium text-gray-700">
               <Link href="/">Home</Link>
-              <Link href="#" className="hover:text-blue-600">Shop</Link>
-              <Link href="#" className="hover:text-blue-600">Categories</Link>
-              <Link href="#" className="hover:text-blue-600">Contact</Link>
+              <Link href="/products" className="hover:text-blue-600">Shop</Link>
+              <Link href="/about" className="hover:text-blue-600">About</Link>
+              <Link href="/contact" className="hover:text-blue-600">Contact</Link>
               <button className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
                 Sign In
               </button>
