@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* Divider */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} YourBrand. All rights reserved.
+       <p>© 2025 YourBrand. All rights reserved. Don&apos;t copy this.</p>
       </div>
     </footer>
   );
