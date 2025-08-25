@@ -7,18 +7,22 @@ export async function POST(req: Request) {
 
     // Configure transporter (Ethereal for dev/test)
     const transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      auth: {
-        user: "dangelo.morar@ethereal.email", // replace with real creds
-        pass: "1kZss3gVVNsG2gXN63",
-      },
-    });
+    host: "smtp.office365.com",   // Outlook SMTP server
+    port: 587,                    // TLS port
+    secure: false,                // STARTTLS (not SSL)
+    auth: {
+      user: "durai@fronseye.com",   // your full Outlook email
+      pass: "Loyola_2109@!", // password or App Password if MFA is enabled
+    },
+    tls: {
+      ciphers: "SSLv3",           // helps with older TLS handshake issues
+    },
+  });
 
     // Send mail
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: "your_email@example.com",
+      to: "durai@fronseye.com",
       subject: "New Contact Form Submission",
       text: message,
       html: `<p><strong>Name:</strong> ${name}</p>
